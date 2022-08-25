@@ -1,0 +1,450 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Aug 25 18:00:15 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
+# environment
+DESKTOP_SESSION = ubuntu
+# makefile (from 'Makefile', line 26)
+CFILENDIR := main.c clk.c led.c delay.c
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from 'Makefile', line 2)
+TARGET = output/led
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/gec/.Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=fcitx
+# makefile
+CURDIR := /home/gec/LDD/linux/BD_remake/led_bsp
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = zh_CN
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_translationsConfigFile":"/home/gec/.config/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/tcf.json","_cacheRoot":"/home/gec/.config/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn","_resolvedLanguagePackCoreLocation":"/home/gec/.config/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"/home/gec/.config/Code/clp/cc0490d1397af23dc5bf44a96fe15dbb.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# environment
+socks_proxy = socks://127.0.0.1:7890/
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile (from 'Makefile', line 25)
+SFILENDIR := start.S
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+SESSIONTYPE = gnome-session
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop
+# makefile (from 'Makefile', line 29)
+COBJS :=  obj/main.o  obj/clk.o  obj/led.o  obj/delay.o
+# makefile (from 'Makefile', line 15)
+SRCDIRS := src bsp/clk bsp/led bsp/delay 
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-VkIaOpD2HA
+# makefile (from 'Makefile', line 22)
+SFILES :=  src/start.S      
+# makefile (from 'Makefile', line 30)
+OBJS :=  obj/start.o  obj/main.o  obj/clk.o  obj/led.o  obj/delay.o
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/gec
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/gec/bin:/home/gec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin
+# makefile (from 'Makefile', line 6)
+LD := arm-linux-gnueabihf-ld
+# environment
+GPG_AGENT_INFO = /home/gec/.gnupg/S.gpg-agent:0:1
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/2049,unix/ubuntu:/tmp/.ICE-unix/2049
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 32)
+VPATH := src bsp/clk bsp/led bsp/delay 
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+SESSION = ubuntu
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/gec
+# environment
+LS_COLORS = 
+# environment
+JOB = dbus
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 15938
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+GTK_IM_MODULE = fcitx
+# environment
+PWD = /home/gec/LDD/linux/BD_remake/led_bsp
+# environment
+QT_QPA_PLATFORMTHEME = appmenu-qt5
+# environment
+XDG_SEAT = seat0
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+# environment
+GTK_MODULES = gail:atk-bridge:unity-gtk-module
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/gec
+# environment
+VSCODE_CODE_CACHE_PATH = /home/gec/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+# environment
+LOGNAME = gec
+# environment
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON = 1
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+ZSH = /home/gec/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 4.1
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 7
+# environment
+LC_TIME = zh_CN.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = fcitx
+# makefile (from 'Makefile', line 28)
+SOBJS :=  obj/start.o
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 5)
+CC := arm-linux-gnueabihf-gcc
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+COMPIZ_CONFIG_PROFILE = ubuntu
+# environment
+XDG_SESSION_ID = c2
+# environment
+USER = gec
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := output/led.bin
+# makefile (from 'Makefile', line 20)
+INCLUDE :=  -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 23)
+CFILES :=  src/main.c  bsp/clk/clk.c  bsp/led/led.c  bsp/delay/delay.c
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+GNOME_KEYRING_PID = 
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# makefile (from 'Makefile', line 10)
+INCDIRS := imx6u bsp/clk bsp/led bsp/delay 
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/gec
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:en_US:en
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-232822b2-1.70.2-main.sock
+# environment
+GNOME_KEYRING_CONTROL = 
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 8)
+OBJDUMP := arm-linux-gnueabihf-objdump
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = zh_CN.UTF-8
+# environment
+GTK2_MODULES = overlay-scrollbar
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+# makefile (from 'Makefile', line 1)
+CROSS_COMPILE = arm-linux-gnueabihf-
+# default
+MAKEFILES := 
+# environment
+UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/1770
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+https_proxy = https://127.0.0.1:7890/
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+INSTANCE = 
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+QT4_IM_MODULE = fcitx
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 7)
+OBJCOPY := arm-linux-gnueabihf-objcopy
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+ 
+# default
+.RECIPEPREFIX := 
+# environment
+http_proxy = http://127.0.0.1:7890/
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 15938
+# variable set hash-table stats:
+# Load=138/1024=13%, Rehash=0, Collisions=33/183=18%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 1316612): 14 files, no impossibilities.
+# bsp/delay (device 2049, inode 1316619): 4 files, no impossibilities.
+# bsp/clk (device 2049, inode 1316617): 4 files, no impossibilities.
+# bsp/led (device 2049, inode 1316618): 4 files, no impossibilities.
+# src (device 2049, inode 1316615): 5 files, no impossibilities.
+
+# 31 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+obj/start.o: start.S
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'start'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 42):
+	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+obj/delay.o: delay.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'delay'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/main.o: main.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'main'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-25 17:58:28.820276667
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+delay.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+led.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+clk.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/led.o: led.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'led'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+start.S:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 48):
+	rm -rf $(TARGET).elf $(TARGET).dis $(TARGET).bin $(COBJS) $(SOBJS)
+
+obj/clk.o: clk.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'clk'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	
+
+output/led.bin: obj/start.o obj/main.o obj/clk.o obj/led.o obj/delay.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(LD) -Timx6ul.lds -o $(TARGET).elf $^
+	$(OBJCOPY) -O binary -S $(TARGET).elf $@
+	$(OBJDUMP) -D -m arm $(TARGET).elf > $(TARGET).dis
+
+# files hash-table stats:
+# Load=17/1024=2%, Rehash=0, Collisions=0/49=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# General ('VPATH' variable) search path:
+# src:bsp/clk:bsp/led:bsp/delay
+
+# strcache buffers: 1 (0) / strings = 48 / storage = 382 B / avg = 7 B
+# current buf: size = 8162 B / used = 382 B / count = 48 / avg = 7 B
+
+# strcache performance: lookups = 85 / hit rate = 43%
+# hash-table stats:
+# Load=48/8192=1%, Rehash=0, Collisions=5/85=6%
+# Finished Make data base on Thu Aug 25 18:00:15 2022
+
+ 

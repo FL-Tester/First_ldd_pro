@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/gec/LDD/linux/BD_remake/led_bsp'
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/start.o src/start.S
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/main.o src/main.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/clk.o bsp/clk/clk.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/led.o bsp/led/led.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/delay.o bsp/delay/delay.c
+arm-linux-gnueabihf-ld -Timx6ul.lds -o output/led.elf obj/start.o obj/main.o obj/clk.o obj/led.o obj/delay.o
+arm-linux-gnueabihf-objcopy -O binary -S output/led.elf output/led.bin
+arm-linux-gnueabihf-objdump -D -m arm output/led.elf > output/led.dis
+make: Leaving directory '/home/gec/LDD/linux/BD_remake/led_bsp'
+ 
