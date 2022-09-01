@@ -10,8 +10,7 @@ Copyright © zuozhongkai Co., Ltd. 1998-2019. All rights reserved.
 日志	   : 初版V1.0 2019/1/4 左忠凯移植
 **************************************************************/
 
-#ifndef _FSL_IOMUXC_H_
-#define _FSL_IOMUXC_H_
+#pragma once 
 
 #include "MCIMX6Y2.h"
 #include "fsl_common.h"
@@ -1120,4 +1119,3 @@ static inline void IOMUXC_SetPinConfig(uint32_t muxRegister,
     }
 }
 
-#endif /* _FSL_IOMUXC_H_ */

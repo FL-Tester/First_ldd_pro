@@ -1,3 +1,17 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "beep.h": "c",
+        "mcimx6y2.h": "c",
+        "fsl_common.h": "c",
+        "imx6ul.h": "c",
+        "int_beep.h": "c",
+        "int.h": "c",
+        "delay.h": "c",
+        "led.h": "c",
+        "epit_key_filter.h": "c"
+    }
 }

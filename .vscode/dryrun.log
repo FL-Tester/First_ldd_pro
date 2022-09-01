@@ -1,12 +1,15 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/gec/LDD/linux/BD_remake/led_bsp'
-arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/start.o src/start.S
-arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/main.o src/main.c
-arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/clk.o bsp/clk/clk.c
-arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/led.o bsp/led/led.c
-arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay -o obj/delay.o bsp/delay/delay.c
-arm-linux-gnueabihf-ld -Timx6ul.lds -o output/led.elf obj/start.o obj/main.o obj/clk.o obj/led.o obj/delay.o
-arm-linux-gnueabihf-objcopy -O binary -S output/led.elf output/led.bin
-arm-linux-gnueabihf-objdump -D -m arm output/led.elf > output/led.dis
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/start.o src/start.S
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/main.o src/main.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/clk.o bsp/clk/clk.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/led.o bsp/led/led.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/delay.o bsp/delay/delay.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/beep.o bsp/beep/beep.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/key.o bsp/key/key.c
+arm-linux-gnueabihf-gcc -Wall -nostdlib -c -O2   -I imx6u  -I bsp/clk  -I bsp/led  -I bsp/delay  -I bsp/beep  -I bsp/key  -I bsp/gpio -o obj/gpio.o bsp/gpio/gpio.c
+arm-linux-gnueabihf-ld -Timx6ul.lds -o output/bsp.elf obj/start.o obj/main.o obj/clk.o obj/led.o obj/delay.o obj/beep.o obj/key.o obj/gpio.o
+arm-linux-gnueabihf-objcopy -O binary -S output/bsp.elf output/bsp.bin
+arm-linux-gnueabihf-objdump -D -m arm output/bsp.elf > output/bsp.dis
 make: Leaving directory '/home/gec/LDD/linux/BD_remake/led_bsp'
  

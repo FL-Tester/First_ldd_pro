@@ -11,8 +11,7 @@ Copyright © zuozhongkai Co., Ltd. 1998-2019. All rights reserved.
 **************************************************************/
 
 
-#ifndef _MCIMX6Y2_H_
-#define _MCIMX6Y2_H_                             /**< Symbol preventing repeated inclusion */
+#pragma once                         /**< Symbol preventing repeated inclusion */
 
 #include "cc.h"			/* cc.h为自行添加的文件 */
 
@@ -42094,5 +42093,5 @@ typedef struct {
  */ /* end of group SDK_Compatibility_Symbols */
 
 
-#endif  /* _MCIMX6Y2_H_ */
+
 

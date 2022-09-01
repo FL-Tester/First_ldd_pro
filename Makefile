@@ -1,5 +1,5 @@
 CROSS_COMPILE 	?= arm-linux-gnueabihf-
-TARGET          ?= output/led
+TARGET          ?= output/bsp
 
 
 CC 				:= $(CROSS_COMPILE)gcc
@@ -11,11 +11,26 @@ INCDIRS			:= imx6u \
                    bsp/clk \
 				   bsp/led \
 				   bsp/delay \
+				   bsp/beep \
+				   bsp/key \
+				   bsp/gpio \
+				   bsp/int \
+				   bsp/int_beep \
+				   bsp/epit \
+				   bsp/epit_key_filter
 
 SRCDIRS			:= src \
 				   bsp/clk \
 				   bsp/led \
 				   bsp/delay \
+				   bsp/beep \
+				   bsp/key \
+				   bsp/gpio \
+				   bsp/int \
+				   bsp/int_beep \
+				   bsp/epit \
+				   bsp/epit_key_filter
+
 
 INCLUDE			:= $(patsubst %, -I %, $(INCDIRS))
 
