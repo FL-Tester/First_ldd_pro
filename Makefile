@@ -10,6 +10,7 @@ OBJDUMP 		:= $(CROSS_COMPILE)objdump
 INCDIRS			:= imx6u \
                    bsp/clk \
 				   bsp/led \
+				   bsp/lcd \
 				   bsp/delay \
 				   bsp/beep \
 				   bsp/key \
@@ -17,11 +18,18 @@ INCDIRS			:= imx6u \
 				   bsp/int \
 				   bsp/int_beep \
 				   bsp/epit \
-				   bsp/epit_key_filter
+				   bsp/epit_key_filter \
+				   bsp/uart \
+				   stdio/include \
+				   bsp/i2c \
+				   bsp/ap3216c \
+				   bsp/icm_20608 \
+				   bsp/spi \
 
 SRCDIRS			:= src \
 				   bsp/clk \
 				   bsp/led \
+				   bsp/lcd \
 				   bsp/delay \
 				   bsp/beep \
 				   bsp/key \
@@ -29,8 +37,15 @@ SRCDIRS			:= src \
 				   bsp/int \
 				   bsp/int_beep \
 				   bsp/epit \
-				   bsp/epit_key_filter
+				   bsp/epit_key_filter \
+				   bsp/uart \
+				   stdio/lib \
+				   bsp/i2c \
+				   bsp/ap3216c \
+				   bsp/icm_20608 \
+				   bsp/spi \
 
+LIBPATH			:= -lgcc -L /usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.4
 
 INCLUDE			:= $(patsubst %, -I %, $(INCDIRS))
 
@@ -49,15 +64,15 @@ VPATH			:= $(SRCDIRS)
 .PHONY: clean
 	
 $(TARGET).bin : $(OBJS)
-	$(LD) -Timx6ul.lds -o $(TARGET).elf $^
-	$(OBJCOPY) -O binary -S $(TARGET).elf $@
+	$(LD) -Timx6ul.lds -o $(TARGET).elf $^ $(LIBPATH) 
+	$(OBJCOPY) -O binary -S $(TARGET).elf $@ 
 	$(OBJDUMP) -D -m arm $(TARGET).elf > $(TARGET).dis
 
 $(SOBJS) : obj/%.o : %.S
-	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	$(CC) -Wall -nostdlib -fno-builtin -c -O2  $(INCLUDE) -o $@ $< 
 
 $(COBJS) : obj/%.o : %.c
-	$(CC) -Wall -nostdlib -c -O2  $(INCLUDE) -o $@ $<
+	$(CC) -Wall -Wa,-mimplicit-it=thumb -nostdlib -fno-builtin -c -O2  $(INCLUDE)  -o $@ $<
 	
 clean:
 	rm -rf $(TARGET).elf $(TARGET).dis $(TARGET).bin $(COBJS) $(SOBJS)

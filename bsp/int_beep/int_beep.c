@@ -1,10 +1,6 @@
 #include "int_beep.h"
 
-#include "beep.h"
-#include "delay.h"
-#include "led.h"
-#include "gpio.h"
-#include "int.h"
+
 
 /*
  * @description			: 初始化外部中断
